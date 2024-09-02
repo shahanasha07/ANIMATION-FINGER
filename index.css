@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+ 
+}
+.main{
+    width: 50%;
+    height: 80vh;
+    background-color: rgb(36, 128, 226);
+    margin:auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finger{
+    width: 45px;
+    height: 20vh;
+    background-color: white;
+    margin-left: 8px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    animation: finger 1s linear .8s infinite;
+  
+}
+.f1{
+    height: 15vh;
+    animation-delay: .4s;
+}
+.f2,.f4{
+    height: 18vh;
+    animation-delay: .2s;
+}
+.f4{
+    animation-delay: .1s;
+}
+.f3{
+    animation-delay: .3s;
+}
+.f5{
+    height: 10vh;
+    width: 80px;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 55px;
+    
+}
+.nail{
+    width: 30px;
+    height: 30px;
+    background-color:  rgb(36, 128, 226);
+
+    border-radius: 10px; 
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    top: -4px;
+
+}
+p{
+    font-size: 35px;
+    margin-top: -18px;
+    color: rgb(36, 128, 226);
+    animation: finger 1s linear 1s infinite;
+}
+
+@keyframes finger{
+    /* 0%{
+        margin-top: -2px;
+        transform: translateY(-2px);
+    } */
+    40%{
+        /* margin-top: -12px; */
+        transform: translateY(0px);
+        transform: rotateX(20deg);
+    }
+    60%{
+        /* margin-top: 0px; */
+        transform: translateY(10px);
+        
+    }
+}
